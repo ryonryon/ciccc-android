@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn = (Button) view;
 
-        if(btn.getId() == R.id.leftBtn) {
-            if(isRightAnswer) {
+        if (btn.getId() == R.id.leftBtn) {
+            if (isRightAnswer) {
                 score--;
                 toast("Wrong!");
             } else {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 toast("Righte!");
             }
         } else {
-            if(isRightAnswer) {
+            if (isRightAnswer) {
                 score++;
                 toast("Righte!");
             } else {
