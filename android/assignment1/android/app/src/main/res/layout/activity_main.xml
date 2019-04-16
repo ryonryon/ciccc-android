@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/scoreTV"
         android:textSize="20sp"
         android:text="Score: 0"
         android:layout_margin="20dp"
@@ -16,7 +17,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:textSize="35dp"
+        android:textSize="30dp"
         android:text="Select the right color!"
         android:textAlignment="center"
         android:layout_margin="50dp"
@@ -30,12 +31,16 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/leftBtn"
+            android:onClick="buttonTapped"
             android:layout_marginRight="50dp"
             android:background="@color/colorAccent"
             android:layout_width="150dp"
             android:layout_height="150dp" />
 
         <Button
+            android:id="@+id/rightBtn"
+            android:onClick="buttonTapped"
             android:background="@color/colorPrimary"
             android:layout_width="150dp"
             android:layout_height="150dp" />
@@ -44,6 +49,7 @@
 
 
     <TextView
+        android:id="@+id/questionTV"
         android:layout_margin="100dp"
         android:text="Pink"
         android:textSize="35dp"
