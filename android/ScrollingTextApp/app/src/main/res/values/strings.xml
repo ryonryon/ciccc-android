@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Scrolling-Text-App</string>
+    <string name="article_title">Wondering aloud in Japanese about our Heisei Era memories</string>
+    <string name="article_text">
+        APR 22, 2019
+        ARTICLE HISTORY PRINT SHARE
+        Heisei ga hajimatta koro wa, ima to zenzen chigatte-ita deshō ne. (At the start of Heisei, things would have been totally different from (what they are) now.)
+
+        Situation 1: Mr. Sere and his girlfriend, Yuri, are watching a TV show looking back on the Heisei Era.
+
+        ゆり：	平成が始まったころは、今と全然違っていたでしょうね。
+
+        セレ：	うん。バブル経済だから、みんな、お金をどんどん使っていただろうね。
+
+        Yuri: Heisei ga hajimatta koro wa, ima to zenzen chigatte-ita deshō ne.
+
+        Sere: Un. Baburu-keizai dakara, minna, o-kane o dondon tsukatte-ita darō ne.
+
+        Yuri: At the start of Heisei, things would’ve been totally different from (what they are) now.
+
+        Sere: Yeah. Because of the bubble economy, everyone would have been spending money hand over fist.
+
+        Japanese uses ~だろう and ~でしょう, as well as ~んだろうか and ~んでしょうか, to convey the speaker’s conjecture. ~でしょう(か) is the more polite choice, while ~だろう(か) is mostly used by men in casual conversation. When it is spoken with a falling intonation, ~でしょう can mean “I suppose,” “I think” or “I wonder,” and can be used when the conjecture is not based on any evidence or information. However, the pattern can’t be used to relay the speaker’s or listener’s intended actions.
+
+        What gets attached to the front of the pattern is a verb, adjective or noun in the present or future affirmative, replacing です or だ. For example, げんきだ (He/she is fine) would become げんきでしょう (I think he/she is fine) and うそだ would become うそでしょう (I think it’s a lie). The adverbs たぶん (maybe) and きっと (surely) are also often used with this expression:
+
+        伊藤(いとう)さんはきっともうすぐ来(く)るでしょう。 (Ms. Ito should surely be here soon.)
+
+        The ~だろう/でしょう pattern can also be used to soften any assertions the speaker makes:
+
+        この計画(けいかく)は実現(じつげん)しないでしょうね。 (I’m not too sure that this plan will be realized.)
+
+        Situation 2: Continued from Situation 1.
+
+        ゆり：	株も土地もまだまだ上がるだろうと思ったんだね。
+
+        セレ：	そんなにお金を儲けて何をしたかったんだろう。
+
+        Yuri: Kabu mo tochi mo mada-mada agaru darō to omotta-n da ne.
+
+        Sere: Sonna ni o-kane o mōkete nani o shitakatta-n darō.
+
+        Yuri: People must have thought that stock (prices) and land (value) would rise even more.
+
+        Sere: I wonder what they wanted to do, making that much money.
+
+        The ~んでしょう/~んだろう pattern also conveys conjecture with regard to a cause or reason for something:
+
+        彼(かれ)はあまりにも無理(むり)をしたから、病気(びょうき)になったんだろう。 (I guess he got sick because he pushed himself too hard.)
+
+        Interrogatives such as どうして and なぜ (why), どうやって(how), as well as the question-indicating particle か are also often used with the pattern:
+
+        ピラミッドはどうやってつくられたのだろうか。 (How on Earth were the pyramids built?)
+
+        Bonus Dialogue: Ms. Tamachi and her colleague Ms. Gray are talking about kimono when Mr. Mita joins the conversation.
+
+        田町(たまち):	最近(さいきん)、レンタル着物(きもの)を着(き)て歩(ある)く人(ひと)が増(ふ)えているのよ。グレイさんもやってみたら？ きっと似合(にあ)うでしょうね。
+
+        グレイ：	でも、帯(おび)をあんなにしめたら、たぶん苦(くる)しくなるでしょうね。
+
+        田町：	だいじょうぶ。上手(じょうず)な人に着せてもらったら苦しくないよ。
+
+        グレイ：	そうなんだ。田町さんは着物を着る？
+
+        田町：	そうね、私(わたし)は子(こ)どものころに着たぐらいかな。
+
+        グレイ：	田町さんの着物姿(きものすがた)、きっとかわいかったでしょうね。
+
+        三田(みた)： [会話(かいわ)に入(はい)る] 今(いま)、田町さんが着物を着たら、旅館(りょかん)の仲居(なかい)さんみたいになるだろうなあ。
+
+        田町：	何(なに)よ。三田さんだったら、売(う)れない落語家(らくごか)みたいになるでしょうね。
+
+        グレイ：	まあまあ、二人(ふたり)ともケンカしないで。
+
+        Tamachi: Recently, the number of people who rent kimono and go for a walk is on the rise. Ms. Gray, why don’t you try doing it? I’m sure it would suit you.
+
+        Gray: But when the obi is fastened up like that, it seems like it might hurt.
+
+        Tamachi: It’s OK. If you’re dressed by a person who can do it right it won’t hurt.
+
+        Gray: I see. Ms. Tamachi, do you wear kimono?
+
+        Tamachi: Well, I wore one when I was a kid.
+
+        Gray: Ms. Tamachi, you dressed in a kimono would’ve been cute for sure.
+
+        Mita: [Joins the conversation] If you were to wear a kimono now Ms. Tamachi, you’d probably look like an attendant at a Japanese inn.
+
+        Tamachi: Whaaaat?! If it were you, Mr. Mita, you’d look like an unpopular rakugoka (comic storyteller).
+
+        Gray: Come now, don’t argue, the two of you.
+    </string>
+    <string name="the_japan_times">the Japan times</string>
+</resources>
