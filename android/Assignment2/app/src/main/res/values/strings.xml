@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string-array name="movies">
+        <item>catch me if you can</item>
+        <item>fight club</item>
+        <item>forrest gump</item>
+        <item>good will hunting</item>
+        <item>pulp fiction</item>
+        <item>the godfather</item>
+        <item>the hangover</item>
+        <item>the shawshank redemption</item>
+        <item>titanic</item>
+    </string-array>
+</resources>
