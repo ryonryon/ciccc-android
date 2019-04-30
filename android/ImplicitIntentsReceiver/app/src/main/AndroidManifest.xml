@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ryotogashi.implicitintentsreceiver">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <!-- Match Any Intent with view actions -->
+                <action android:name="android.intent.action.VIEW" />
+                <!-- This category must be included for your Activity to receive any implicit intent -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <!-- Request for browsable links from web pages, email or other sources -->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- URI that contain a scheme of http and a host name of google.ca`` -->
+                <data android:scheme="http" android:host="google.ca" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
