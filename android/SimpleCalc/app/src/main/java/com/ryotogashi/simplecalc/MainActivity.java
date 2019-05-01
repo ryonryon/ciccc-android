@@ -40,22 +40,23 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        Calculator cal = new Calculator();
 
         switch (opr){
             case add:
-                ans = topText + bottomText;
+                ans = cal.add(topText, bottomText);
                 break;
 
             case sub:
-                ans = topText - bottomText;
+                ans = cal.sub(topText, bottomText);
                 break;
 
             case div:
-                ans = topText / bottomText;
+                ans = cal.div(topText, bottomText);
                 break;
 
             case mul:
-                ans = topText * bottomText;
+                ans = cal.mul(topText, bottomText);
                 break;
         }
 
