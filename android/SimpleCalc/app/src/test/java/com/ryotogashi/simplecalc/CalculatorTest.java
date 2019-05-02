@@ -30,10 +30,60 @@ public class CalculatorTest {
      */
     @Test
     public void addTwoNumbers() {
-        double resultAdd = mCalculator.add(1d, 1d);
-        assertThat(resultAdd, is(equalTo(2d)));
+        double result = mCalculator.add(1d, 2d);
+        assertThat(result, is(equalTo(3d)));
     }
 
+    @Test
+    public void addTwoNumbersNegative() {
+        double result = mCalculator.add(-1d, 2d);
+        assertThat(result, is(equalTo(1d)));
+    }
 
+//    @Test
+//    public void addTwoNumbersFloats() {
+//        double result = mCalculator.add(1.111f, 1.111d);
+//        assertThat(result, is(closeTo(2.222d)));
+//    }
 
+    @Test
+    public void subTwoNumbers() {
+        double result = mCalculator.sub(1d, 2d);
+        assertThat(result, is(equalTo(-1d)));
+    }
+
+    @Test
+    public void subWorksWithNegativeResults() {
+        double result = mCalculator.sub(1d, -2d);
+        assertThat(result, is(equalTo(3d)));
+    }
+
+    @Test
+    public void mulTwoNumbers(){
+        double result = mCalculator.mul(1d, 2d);
+        assertThat(result, is(equalTo(2d)));
+    }
+
+    @Test
+    public void mulTwoNumbersZero(){
+        double result = mCalculator.mul(1d, 0);
+        assertThat(result, is(equalTo(0d)));
+    }
+
+    @Test
+    public void divTwoNumbers(){
+        double result = mCalculator.div(9d, 3d);
+        assertThat(result, is(equalTo(3d)));
+    }
+
+//    @Test
+//    public void divTwoNumbersZero(){
+//        double result = mCalculator.div(9d, 0d);
+//        assertThat(result, is(equalTo(0d)));
+//    }
+
+    @Test (expected = IllegalArgumentException.class)
+    public void divByZeroThrows(){
+        double result = mCalculator.div(9d, 0d);
+    }
 }

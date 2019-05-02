@@ -16,6 +16,7 @@ public class Calculator {
      * Subtract operation
      */
     public double sub(double firstOperand, double secondOperand) {
+
         return firstOperand - secondOperand;
     }
 
@@ -23,6 +24,11 @@ public class Calculator {
      * Divide operation
      */
     public double div(double firstOperand, double secondOperand) {
+
+        if(secondOperand == 0) {
+            throw new IllegalArgumentException("You can't divide by 0.");
+        }
+
         return firstOperand / secondOperand;
     }
 

@@ -34,30 +34,28 @@ public class MainActivity extends AppCompatActivity {
         double topText = Integer.parseInt(topET.getText().toString());
         double bottomText = Integer.parseInt(bottomET.getText().toString());
 
-        if(bottomText == 0){
-            Toast.makeText(getApplicationContext(),"You can't divide by 0",Toast.LENGTH_LONG).show();
-
-            return;
-        }
-
         Calculator cal = new Calculator();
 
-        switch (opr){
-            case add:
-                ans = cal.add(topText, bottomText);
-                break;
+        try {
+            switch (opr){
+                case add:
+                    ans = cal.add(topText, bottomText);
+                    break;
 
-            case sub:
-                ans = cal.sub(topText, bottomText);
-                break;
+                case sub:
+                    ans = cal.sub(topText, bottomText);
+                    break;
 
-            case div:
-                ans = cal.div(topText, bottomText);
-                break;
+                case div:
+                    ans = cal.div(topText, bottomText);
+                    break;
 
-            case mul:
-                ans = cal.mul(topText, bottomText);
-                break;
+                case mul:
+                    ans = cal.mul(topText, bottomText);
+                    break;
+            }
+        } catch (IllegalArgumentException e){
+            Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_LONG).show();
         }
 
         ansTV.setText(String.format("%s", ans));
