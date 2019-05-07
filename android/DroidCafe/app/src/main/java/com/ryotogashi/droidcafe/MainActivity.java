@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
         Intent intent = new Intent(MainActivity.this, OrderActivity.class);
-        intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
+//        intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
         startActivity(intent);
     }
 }

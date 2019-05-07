@@ -5,4 +5,20 @@
     <string name="donuts_are_glazed_and_sprinkled_with_candy">Donuts are glazed and sprinkled with candy.</string>
     <string name="ice_cream_sandwiches_have_chocolate_wafers_and_vanilla_filling">Ice cream sandwiches have chocolate wafers and vanilla filling.</string>
     <string name="froyo_is_premium_self_serve_frozen_yogurt">FroYo is premium self-serve frozen yogurt.</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="same_day_messenger_service">Same day messenger service</string>
+    <string name="next_day_ground_delivery">Next day ground delivery</string>
+    <string name="pick_up">Pick up</string>
+    <string name="province">Province</string>
+    <string name="deliver_to_this_address">Deliver to this address</string>
+    <string name="postal_code">Postal Code / Zip</string>
+    <string name="city">City</string>
+    <string name="you_ordered_a_donut">You ordered a donut</string>
+    <string name="name">Name</string>
+    <string name="street">Street</string>
+    <string name="order_confirmation">Order Confirmation</string>
+    <string name="we_will_deliver_below_address">We will deliver below address</string>
+    <string name="address">address</string>
+    <string name="deliverType">Delivary Type</string>
+    <string name="submit">Submit</string>
 </resources>
