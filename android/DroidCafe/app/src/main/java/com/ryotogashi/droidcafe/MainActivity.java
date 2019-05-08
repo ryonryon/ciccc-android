@@ -34,13 +34,22 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+        if (id == R.id.action_order) {
+            goToOrderActivity();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+            return true;
+        } else if (id == R.id.action_contact) {
+            displayToast("Contact Selected.");
+
+            return true;
+        } else if (id == R.id.action_favorites){
+            displayToast("Favorites Selected.");
+
+            return true;
+        } else if (id == R.id.action_status) {
+            displayToast("Status Selected.");
+
             return true;
         }
 
@@ -67,8 +76,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
+        goToOrderActivity();
+    }
+
+    private void goToOrderActivity() {
         Intent intent = new Intent(MainActivity.this, OrderActivity.class);
-//        intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
         startActivity(intent);
     }
 }
