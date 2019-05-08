@@ -6,15 +6,21 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private String mOrderMessage;
-    public static final String EXTRA_MESSAGE = "com.ryotogashi.android.droidcafe.extra.MESSAGE";
+
+    private TextView donutDescription;
+    private TextView iceCreamDescription;
+    private TextView froyoDescription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +29,21 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        donutDescription = findViewById(R.id.donut_description);
+        iceCreamDescription = findViewById(R.id.ice_cream_description);
+        froyoDescription = findViewById(R.id.froyo_description);
+
+        registerForContextMenu(donutDescription);
+        registerForContextMenu(iceCreamDescription);
+        registerForContextMenu(froyoDescription);
+
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_discription, menu);
     }
 
     @Override
@@ -82,5 +103,23 @@ public class MainActivity extends AppCompatActivity {
     private void goToOrderActivity() {
         Intent intent = new Intent(MainActivity.this, OrderActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.action_Copy:
+                displayToast("Copy is selected");
+                return true;
+            case R.id.action_Search:
+                displayToast("Search is selected");
+                return true;
+            case R.id.action_Share:
+                displayToast("Share is selected");
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+
+        }
     }
 }
