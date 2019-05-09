@@ -9,8 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ConfirmationActivity"></activity>
-        <activity android:name=".OrderActivity" />
+        <activity
+            android:name=".ConfirmationActivity"
+            android:parentActivityName=".OrderActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".OrderActivity"/>
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:parentActivityName=".MainActivity"
+            />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
