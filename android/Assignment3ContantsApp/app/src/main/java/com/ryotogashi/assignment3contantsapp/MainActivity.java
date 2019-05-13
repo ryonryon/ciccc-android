@@ -28,13 +28,16 @@ public class MainActivity extends AppCompatActivity {
         request.enqueue(new Callback<ContactList>() {
             @Override
             public void onResponse(Call<ContactList> call, Response<ContactList> response) {
-                if(response.isSuccessful()) {
+                if (response.isSuccessful()) {
                     mContactList = response.body().getContactList();
                     for(Contact contact: mContactList) {
-                        Log.d(TAG, "Name: " + contact.getName());
+                        Log.d(TAG, "-------------------------------------------");
+                        Log.d(TAG, "onResponse: " + mContactList.size());
+                        Log.d(TAG, "onResponse: " + contact);
                     }
+                } else {
+                    Log.d(TAG, "somehow failure... ");
                 }
-                Log.d(TAG, "response isn't success. ");
             }
 
             @Override
@@ -42,6 +45,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
     }
 }

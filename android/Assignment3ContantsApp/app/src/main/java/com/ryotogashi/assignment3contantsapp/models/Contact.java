@@ -6,27 +6,22 @@ import com.google.gson.annotations.SerializedName;
 public class Contact {
     @SerializedName("gender")
     @Expose
-    private String getnder;
-
-
+    private String gender;
     @SerializedName("name")
     @Expose
     private Name name;
-
     @SerializedName("location")
     @Expose
     private Location location;
-
     @SerializedName("email")
     @Expose
     private String email;
-
     @SerializedName("cell")
     @Expose
     private String cell;
 
-    public String getGetnder() {
-        return getnder;
+    public String getGender() {
+        return gender;
     }
 
     public Name getName() {
@@ -45,12 +40,18 @@ public class Contact {
         return cell;
     }
 
-    class Name{
+    @Override
+    public String toString() {
+        return String.format("%n%s%n%s%n%s%n%s", name, location, email, cell);
+    }
 
+    /**
+     * Name {first: , last: }
+     */
+    class Name {
         @SerializedName("first")
         @Expose
         private String first;
-
         @SerializedName("last")
         @Expose
         private String last;
@@ -65,24 +66,23 @@ public class Contact {
 
         @Override
         public String toString() {
-            return first + ' ' + last;
+            return first + " " + last;
         }
     }
 
-    class Location{
-
+    /**
+     * Location {street: , city: , state: , postcode: }
+     */
+    class Location {
         @SerializedName("street")
         @Expose
         private String street;
-
         @SerializedName("city")
         @Expose
         private String city;
-
         @SerializedName("state")
         @Expose
         private String province;
-
         @SerializedName("postcode")
         @Expose
         private String postcode;
@@ -102,5 +102,11 @@ public class Contact {
         public String getPostcode() {
             return postcode;
         }
+
+        @Override
+        public String toString() {
+            return street + ", " + city + ", " + province + " Canada " + postcode;
+        }
     }
 }
+
