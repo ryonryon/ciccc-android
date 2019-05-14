@@ -22,7 +22,7 @@ public class ContactClient {
 
     public static Call<ContactList> getContacts(int num) {
         Call<ContactList> contacts = getRandomUserService().listContacts(num);
-        System.out.println(contacts);
+//        System.out.println(contacts);
         return contacts;
     }
 

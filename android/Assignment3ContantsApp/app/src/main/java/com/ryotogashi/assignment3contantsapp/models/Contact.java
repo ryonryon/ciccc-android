@@ -48,7 +48,7 @@ public class Contact {
     /**
      * Name {first: , last: }
      */
-    class Name {
+    public class Name {
         @SerializedName("first")
         @Expose
         private String first;
