@@ -46,7 +46,7 @@
         <item>Here is some Table Tennis news!</item>
         <item>Here is some Tennis news!</item>
     </string-array>
-    
+
     <string-array name="sports_images">
         <item>@drawable/img_badminton</item>
         <item>@drawable/img_baseball</item>
