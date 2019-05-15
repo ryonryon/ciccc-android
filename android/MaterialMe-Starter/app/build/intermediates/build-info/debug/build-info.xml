@@ -2,35 +2,62 @@
 <instant-run
     abi="x86"
     api-level="28"
-    build-mode="HOT_WARM"
+    build-mode="COLD"
     density="420dpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1557952233059"
+    timestamp="1557955489897"
     token="3003153268335612195"
-    verifier="COMPATIBLE" >
+    verifier="BINARY_MANIFEST_FILE_CHANGE" >
 
     <task
         name="javac"
-        duration="137" />
+        duration="554" />
     <task
         name="instant-run-dex"
-        duration="13" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="37" />
+        duration="235" />
     <task
         name="verifier"
-        duration="17" />
+        duration="171" />
 
     <artifact
-        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1557943270033"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="1557953780239"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
@@ -38,25 +65,25 @@
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -65,7 +92,7 @@
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
@@ -73,20 +100,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1557945916740"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1557947073018"
-        verifier="R_CLASS_CHANGE" >
+        timestamp="1557955489897"
+        verifier="BINARY_MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
@@ -94,7 +109,16 @@
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
@@ -103,27 +127,11 @@
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1557951222600"
-        verifier="CLASS_ADDED" >
-        <artifact
             location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1557952233059"
-        verifier="COMPATIBLE" >
         <artifact
-            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
+            location="/Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

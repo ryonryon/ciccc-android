@@ -1,75 +1,92 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:17:1-35:12
-INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:17:1-35:12
-INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:17:1-35:12
-INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:17:1-35:12
+ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/070dd36f943c2099dcecc5776d6783e0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1be56f45cd31256fd6c8ec8b6cf63a9f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/491e6d42cf53c76908b433379fc0530b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/835bff45e642221332055fdea430e12f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/51a02e5e62bc6ede9925edb497fef0f8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/835bff45e642221332055fdea430e12f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/231aa76a02a5e454c29ecb9bdfa9d27e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/59469c610cca8d3c1e0661876da32d96/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/6db161c413dae7e3bfce9bc90def0297/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0b3feb94fa13e7a64f86c07b251b58f9/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/06820d644d3f7175c5e9342bc452396d/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ffee29018a7c3ebf80d92914d056dfb5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/c0f33a1e04d60d1a72d267a2dcc2285a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/c974a58fc831c07594325657a8bb2d09/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/dfc4a843c24d5504046980c833fb3702/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ecedd8d04acca6e38db4ad5f916d1245/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/d314879c4ed1d8c3b684951830c37825/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f74dbfd447c17cac6303c9632f014456/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/8c7733b0c51259665bcb9008ee404630/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:17:1-35:12
-INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:17:1-35:12
-INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:17:1-35:12
+INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:2:1-21:12
 	package
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:18:5-45
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:3:5-45
 		INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:17:1-35:12
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:2:1-21:12
 		INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:17:1-35:12
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:2:1-21:12
 		INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:17:11-69
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:20:5-33:19
+ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/070dd36f943c2099dcecc5776d6783e0/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/070dd36f943c2099dcecc5776d6783e0/AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:24:9-35
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:23:9-41
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:8:9-41
 	android:icon
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:22:9-43
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:25:9-40
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:10:9-40
+activity#com.example.android.materialme.DetailActivity
+ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:11:9-61
+	android:name
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:11:19-49
 activity#com.example.android.materialme.MainActivity
-ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:26:9-32:20
+ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:26:19-77
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:12:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:27:13-31:29
+ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:28:17-69
+ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:30:17-77
+ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:30:27-74
+		ADDED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml:16:27-74
 uses-sdk
 INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml
 INJECTED from /Users/togashiryo/ciccc_mobile/android/MaterialMe-Starter/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/070dd36f943c2099dcecc5776d6783e0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/070dd36f943c2099dcecc5776d6783e0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1be56f45cd31256fd6c8ec8b6cf63a9f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1be56f45cd31256fd6c8ec8b6cf63a9f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/491e6d42cf53c76908b433379fc0530b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/491e6d42cf53c76908b433379fc0530b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/835bff45e642221332055fdea430e12f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/835bff45e642221332055fdea430e12f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/51a02e5e62bc6ede9925edb497fef0f8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/51a02e5e62bc6ede9925edb497fef0f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/835bff45e642221332055fdea430e12f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/835bff45e642221332055fdea430e12f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/231aa76a02a5e454c29ecb9bdfa9d27e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/231aa76a02a5e454c29ecb9bdfa9d27e/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/59469c610cca8d3c1e0661876da32d96/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/59469c610cca8d3c1e0661876da32d96/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/6db161c413dae7e3bfce9bc90def0297/AndroidManifest.xml:20:5-44
@@ -80,6 +97,10 @@ MERGED from [com.android.support:support-core-utils:27.1.1] /Users/togashiryo/.g
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/06820d644d3f7175c5e9342bc452396d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ffee29018a7c3ebf80d92914d056dfb5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ffee29018a7c3ebf80d92914d056dfb5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/c0f33a1e04d60d1a72d267a2dcc2285a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/c0f33a1e04d60d1a72d267a2dcc2285a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/c974a58fc831c07594325657a8bb2d09/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/c974a58fc831c07594325657a8bb2d09/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/dfc4a843c24d5504046980c833fb3702/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/dfc4a843c24d5504046980c833fb3702/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/togashiryo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ecedd8d04acca6e38db4ad5f916d1245/AndroidManifest.xml:20:5-44
