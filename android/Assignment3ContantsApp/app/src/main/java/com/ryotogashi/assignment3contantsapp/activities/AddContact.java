@@ -1,5 +1,6 @@
 package com.ryotogashi.assignment3contantsapp.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,10 +29,14 @@ public class AddContact extends AppCompatActivity {
         String nameStr = name.getText().toString();
         String phoneStr = phone.getText().toString();
 
-        Log.d(TAG, "name: " + nameStr);
-        Log.d(TAG, "phone: " + phoneStr);
+//        Log.d(TAG, "name: " + nameStr);
+//        Log.d(TAG, "phone: " + phoneStr);
 
-
-
+        Intent intent = new Intent( this, MainActivity.class );
+        intent.putExtra("name", nameStr);
+        intent.putExtra("phone", phoneStr);
+        int requestCode = 1001;
+        startActivityForResult( intent, requestCode );
+        finish();
     }
 }

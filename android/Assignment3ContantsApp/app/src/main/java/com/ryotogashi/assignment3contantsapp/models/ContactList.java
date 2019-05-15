@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 public class ContactList {
 
+    public ContactList() {}
+
     public ContactList(ArrayList<Contact> contactList) {
         this.contactList = contactList;
     }
