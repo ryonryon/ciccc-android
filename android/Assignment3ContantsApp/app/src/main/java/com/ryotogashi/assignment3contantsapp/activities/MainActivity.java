@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             }
-
             @Override
             public void onFailure(Call<ContactList> call, Throwable t) {
                 Log.d(TAG, "failure: " + t);
@@ -69,8 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.add_button) {
+        if (item.getItemId() == R.id.add_button) {
             Intent intent = new Intent(MainActivity.this, AddContact.class);
             startActivity(intent);
 
