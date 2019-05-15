@@ -17,9 +17,6 @@ import com.ryotogashi.assignment3contantsapp.models.Contact;
 import com.ryotogashi.assignment3contantsapp.models.ContactList;
 import com.ryotogashi.assignment3contantsapp.network.ContactClient;
 
-import java.io.IOException;
-import java.util.ArrayList;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -57,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "failure: " + t);
             }
         });
+
     }
 
     @Override
@@ -84,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 String name = intent.getStringExtra("name");
                 String number = intent.getStringExtra("phone");
                 contacts.addContact(new Contact(name, name, number));
+
             }
         }
     }

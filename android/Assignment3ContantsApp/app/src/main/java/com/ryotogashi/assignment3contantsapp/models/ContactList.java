@@ -13,6 +13,7 @@ public class ContactList {
         this.contactList = contactList;
     }
 
+
     @SerializedName("results")
     @Expose
     private ArrayList<Contact> contactList;
@@ -27,5 +28,11 @@ public class ContactList {
 
     public Contact getContact(int index) {
         return this.contactList.get(index);
+    }
+
+    public void addContactList(ArrayList<Contact> contacts){
+        for(Contact contact: contacts){
+            this.addContact(contact);
+        }
     }
 }
