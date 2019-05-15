@@ -40,7 +40,7 @@ public class WordListAdapter extends
         return mWordList.size();
     }
 
-    class WordViewHolder extends RecyclerView.ViewHolder {
+    class WordViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         public final TextView wordItemView;
         final WordListAdapter mAdapter;
@@ -54,6 +54,16 @@ public class WordListAdapter extends
         @Override
         public String toString() {
             return super.toString();
+        }
+
+        @Override
+        public void onClick(View v) {
+
+            int mPosition = getLayoutPosition();
+            String element = mWordList.get(mPosition);
+            mWordList.set(mPosition, "Clicked! " + element);
+            mAdapter.notifyDataSetChanged();
+            itemView.setOnClickListener(this);
         }
     }
 }
