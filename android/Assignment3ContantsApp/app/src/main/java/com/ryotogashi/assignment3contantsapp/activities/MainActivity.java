@@ -24,8 +24,9 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ContactList contacts;
-    private ContactListAdapter adapter;
     public static final String TAG = MainActivity.class.getSimpleName();
+
+    public static final int REQUEST_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,13 +38,15 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView = findViewById(R.id.recycler_view);
 
-        Call<ContactList> call = ContactClient.getContacts(10);
+        Call<ContactList> call = ContactClient.getContacts(5);
         call.enqueue(new Callback<ContactList>() {
             @Override
             public void onResponse(Call<ContactList> call, Response<ContactList> response) {
                 if (response.isSuccessful()) {
 
-                    mRecyclerView.setAdapter(new ContactListAdapter(response.body(), getApplicationContext()));
+                    contacts = new ContactList(response.body().getContactList());
+
+                    mRecyclerView.setAdapter(new ContactListAdapter(contacts, getApplicationContext()));
 
                     mRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
@@ -66,8 +69,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.add_button) {
-            Intent intent = new Intent(MainActivity.this, AddContact.class);
-            startActivity(intent);
+            startActivityForResult(new Intent(this, AddContact.class), REQUEST_CODE);
 
             return true;
         }
@@ -76,13 +78,20 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent intent) {
-        if (requestCode == 1001) {
-            if (resultCode == Activity.RESULT_OK) {
+        super.onActivityResult(requestCode, resultCode, intent);
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
 
                 String name = intent.getStringExtra("name");
                 String number = intent.getStringExtra("phone");
+
+                Log.d(TAG, "---------------------------------------------");
+                Log.d(TAG, "name: " + name);
+                Log.d(TAG, "phone" + number);
+
                 contacts.addContact(new Contact(name, name, number));
 
+                Log.d(TAG, "" + contacts);
             }
         }
     }

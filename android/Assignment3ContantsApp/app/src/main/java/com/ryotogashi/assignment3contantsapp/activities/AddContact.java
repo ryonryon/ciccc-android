@@ -1,8 +1,10 @@
 package com.ryotogashi.assignment3contantsapp.activities;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -13,12 +15,14 @@ public class AddContact extends AppCompatActivity {
 
     private TextView name;
     private TextView phone;
-    public static final String TAG = AddContact.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_contact);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         name = findViewById(R.id.nameTV);
         phone = findViewById(R.id.phoneTV);
@@ -26,17 +30,11 @@ public class AddContact extends AppCompatActivity {
 
     public void submit_data(View view) {
 
-        String nameStr = name.getText().toString();
-        String phoneStr = phone.getText().toString();
+        Intent intent = new Intent();
+        intent.putExtra("name", name.getText().toString());
+        intent.putExtra("phone", phone.getText().toString());
 
-//        Log.d(TAG, "name: " + nameStr);
-//        Log.d(TAG, "phone: " + phoneStr);
-
-        Intent intent = new Intent( this, MainActivity.class );
-        intent.putExtra("name", nameStr);
-        intent.putExtra("phone", phoneStr);
-        int requestCode = 1001;
-        startActivityForResult( intent, requestCode );
+        setResult(RESULT_OK, intent);
         finish();
     }
 }
