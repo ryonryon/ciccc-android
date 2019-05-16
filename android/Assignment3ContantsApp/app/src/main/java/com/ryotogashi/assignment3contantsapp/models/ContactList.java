@@ -30,9 +30,4 @@ public class ContactList {
         return this.contactList.get(index);
     }
 
-    public void addContactList(ArrayList<Contact> contacts){
-        for(Contact contact: contacts){
-            this.addContact(contact);
-        }
-    }
 }
