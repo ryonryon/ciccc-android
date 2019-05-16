@@ -83,9 +83,11 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
 
                 String name = intent.getStringExtra("name");
+                String[] fullName = name.split(" ", 2);
+
                 String number = intent.getStringExtra("phone");
 
-                contacts.addContact(new Contact(name, name, number));
+                contacts.addContact(new Contact(fullName[0], fullName[1], number));
             }
         }
     }
