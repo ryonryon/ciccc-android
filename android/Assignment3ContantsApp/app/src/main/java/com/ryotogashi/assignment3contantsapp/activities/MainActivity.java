@@ -85,13 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 String name = intent.getStringExtra("name");
                 String number = intent.getStringExtra("phone");
 
-                Log.d(TAG, "---------------------------------------------");
-                Log.d(TAG, "name: " + name);
-                Log.d(TAG, "phone" + number);
-
                 contacts.addContact(new Contact(name, name, number));
-
-                Log.d(TAG, "" + contacts);
             }
         }
     }
