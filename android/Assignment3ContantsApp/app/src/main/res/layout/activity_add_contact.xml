@@ -11,7 +11,7 @@
         layout="@layout/toolbar" />
 
     <EditText
-        android:id="@+id/nameTV"
+        android:id="@+id/nameEV"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -25,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/phoneTV"
+        android:id="@+id/phoneEV"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -36,7 +36,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameTV" />
+        app:layout_constraintTop_toBottomOf="@+id/nameEV" />
 
     <Button
         android:id="@+id/button"
@@ -50,5 +50,5 @@
         android:onClick="submit_data"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneTV" />
+        app:layout_constraintTop_toBottomOf="@+id/phoneEV" />
 </android.support.constraint.ConstraintLayout>
