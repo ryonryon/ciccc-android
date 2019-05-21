@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "718658583487",
+    "firebase_url": "https://artistsfirebase-ee3e3.firebaseio.com",
+    "project_id": "artistsfirebase-ee3e3",
+    "storage_bucket": "artistsfirebase-ee3e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718658583487:android:fb2f1449f5f131bf",
+        "android_client_info": {
+          "package_name": "com.ryotogashi.artistsfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718658583487-7i58d0bj7mdqtinsfei0lgvjcvfk8dbg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ryotogashi.artistsfirebase",
+            "certificate_hash": "7a6e89d4514f70c7a0e29d7a6aa5d1dfec90c522"
+          }
+        },
+        {
+          "client_id": "718658583487-kar6b1e6ur3jet1dadqqj8nutk5tccpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTuA-APMuZoHmkIF4LzUnr0iMn_HyHEqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718658583487-kar6b1e6ur3jet1dadqqj8nutk5tccpa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
