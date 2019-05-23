@@ -63,7 +63,7 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ArtistView
         public void bind(Artist artist) {
             mArtistTextView.setText(artist.getName());
             mGenreTextView.setText(artist.getGenre());
-            mRateTextView.setText(artist.getRate());
+            mRateTextView.setText(String.valueOf(artist.getRate()));
             mAddedDateTextView.setText(artist.getAddedDate().toDate().toString());
         }
 

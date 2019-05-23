@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
         mListenerRegistration.remove();
     }
 
-    private  void updateArtist(String id, final String name, final String genre, final String rate){
+    private  void updateArtist(String id, final String name, final String genre, final int rate){
         final DocumentReference artistRef = db.collection("artists").document(id);
         db.runTransaction(new Transaction.Function<Void>() {
             @android.support.annotation.Nullable
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
     public void addArtist(View view) {
         final String name = mNameEditText.getText().toString().trim(); // get rid of whitespaces
         String genre = mGenreSpinner.getSelectedItem().toString();
-        String rate = String.valueOf(mRageSeekBar.getProgress());
+        int rate = mRageSeekBar.getProgress();
         if (!TextUtils.isEmpty(name)) {
             // if name is not empty
             Artist artist = new Artist(name, genre, rate);
@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
                 }
 //                int newRate = seekBar.getProgress();
                 // TODO
-                updateArtist(artist.getId(), newName, newGenre, "1");
+                updateArtist(artist.getId(), newName, newGenre, 1);
                 alertDialog.dismiss();
             }
         });

@@ -9,14 +9,13 @@ public class Artist {
     private String id;
     private String name;
     private String genre;
-    private String rate;
+    private int rate;
     private Timestamp addedDate;
 
-    public Artist() {
-        // firestore will use this to read data
-    }
+    // firestore will use this to read data
+    public Artist() {}
 
-    public Artist(String name, String genre, String rate) {
+    public Artist(String name, String genre, int rate) {
         this.name = name;
         this.genre = genre;
         this.rate = rate;
@@ -40,7 +39,7 @@ public class Artist {
         return genre;
     }
 
-    public String getRate() {
+    public int getRate() {
         return rate;
     }
 
