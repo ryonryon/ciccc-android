@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
                     @Override
                     public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException e) {
 
-                        // mArtistArrayList = (ArrayList<Artist>) queryDocumentSnapshots.toObjects(Artist.class);
                         mArtistArrayList = new ArrayList<>();
                         for(DocumentSnapshot documentSnapshot: queryDocumentSnapshots.getDocuments()) {
                             Artist artist = documentSnapshot.toObject(Artist.class);
@@ -114,42 +113,44 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
     }
 
     public void addArtist(View view) {
-        final String name = mNameEditText.getText().toString().trim(); // get rid of whitespaces
-        String genre = mGenreSpinner.getSelectedItem().toString();
-        int rate = mRageSeekBar.getProgress();
-        if (!TextUtils.isEmpty(name)) {
-            // if name is not empty
-            Artist artist = new Artist(name, genre, rate);
-            mArtistArrayList.add(artist);
-            // 1. get the database instance
-            // 2. set the collection (path)
-            db.collection("artists")
-                    .add(artist) // generates id string automatically
-                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                        @Override
-                        public void onSuccess(DocumentReference documentReference) {
-                            // when added successfully
-                            Snackbar.make(findViewById(R.id.coordinatorLayout), name + " successfully added!", Snackbar.LENGTH_LONG)
-                                    .show();
-                            // after adding an artist
-                            mNameEditText.setText("");
-                            mNameEditText.clearFocus();
-                            mRageSeekBar.setProgress(1);
-                            mGenreSpinner.setSelection(0);
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            // when failed
-                        }
-                    });
-        } else {
+
+        final String name = mNameEditText.getText().toString().trim();
+        final String genre = mGenreSpinner.getSelectedItem().toString();
+        final int rate = mRageSeekBar.getProgress();
+
+        if(TextUtils.isEmpty(name)){
             // if name is empty
             Snackbar.make(findViewById(R.id.coordinatorLayout), "Please set the artist name!", Snackbar.LENGTH_LONG)
                     .show();
-        }
 
+            return;
+        }
+        
+        Artist artist = new Artist(name, genre, rate);
+        mArtistArrayList.add(artist);
+        // 1. get the database instance
+        // 2. set the collection (path)
+        db.collection("artists")
+                .add(artist) // generates id string automatically
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        // when added successfully
+                        Snackbar.make(findViewById(R.id.coordinatorLayout), name + " successfully added!", Snackbar.LENGTH_LONG)
+                                .show();
+                        // after adding an artist
+                        mNameEditText.setText("");
+                        mNameEditText.clearFocus();
+                        mRageSeekBar.setProgress(1);
+                        mGenreSpinner.setSelection(0);
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // when failed
+                    }
+                });
     }
 
     @Override
@@ -183,13 +184,16 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
         updateBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String newName = nameET.getText().toString().trim();
-                String newGenre = spinner.getSelectedItem().toString();
-                if(!TextUtils.isEmpty(newName)){
+
+                final String newName = nameET.getText().toString().trim();
+                final String newGenre = spinner.getSelectedItem().toString();
+                final int newRate = seekBar.getProgress();
+
+                if(TextUtils.isEmpty(newName)){
                     nameET.setError("Artist Name Required");
                     return;
                 }
-                int newRate = seekBar.getProgress();
+
                 updateArtist(artist.getId(), newName, newGenre, newRate);
                 alertDialog.dismiss();
             }
@@ -207,7 +211,7 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
 
     private int getIndexForGenre(String genre) {
         switch (genre) {
-            case "Hip=Hop":
+            case "Hip-Hop":
                 return 0;
             case "R&B":
                 return 1;
