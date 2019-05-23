@@ -173,8 +173,7 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
 
         nameET.setText(artist.getName());
         spinner.setSelection(getIndexForGenre(artist.getGenre()));
-        // TODO
-//        seekBar.setProgress(artist.getRate());
+        seekBar.setProgress(artist.getRate());
 
         builder.setTitle(("Update " + artist.getName()));
         final AlertDialog alertDialog = builder.create();
@@ -189,9 +188,8 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
                     nameET.setError("Artist Name Required");
                     return;
                 }
-//                int newRate = seekBar.getProgress();
-                // TODO
-                updateArtist(artist.getId(), newName, newGenre, 1);
+                int newRate = seekBar.getProgress();
+                updateArtist(artist.getId(), newName, newGenre, newRate);
                 alertDialog.dismiss();
             }
         });
