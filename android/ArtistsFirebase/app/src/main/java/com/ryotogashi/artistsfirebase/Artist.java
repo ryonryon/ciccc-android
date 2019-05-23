@@ -12,7 +12,7 @@ public class Artist {
     private int rate;
     private Timestamp addedDate;
 
-    // firestore will use this to read data
+    // FireStore will use this to read data
     public Artist() {}
 
     public Artist(String name, String genre, int rate) {

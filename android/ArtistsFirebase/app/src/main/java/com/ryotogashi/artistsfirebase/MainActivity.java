@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
             @android.support.annotation.Nullable
             @Override
             public Void apply(@NonNull Transaction transaction) throws FirebaseFirestoreException {
-                transaction.set(artistRef, new Artist(name, genre,rate));
+                transaction.set(artistRef, new Artist(name, genre, rate));
                 return null;
             }
         });
@@ -134,6 +134,8 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
                             // after adding an artist
                             mNameEditText.setText("");
                             mNameEditText.clearFocus();
+                            mRageSeekBar.setProgress(1);
+                            mGenreSpinner.setSelection(0);
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
@@ -142,7 +144,6 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
                             // when failed
                         }
                     });
-//            mArtistAdapter.notifyDataSetChanged(); // refresh recyclerView
         } else {
             // if name is empty
             Snackbar.make(findViewById(R.id.coordinatorLayout), "Please set the artist name!", Snackbar.LENGTH_LONG)
