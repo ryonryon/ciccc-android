@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -15,11 +16,15 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ArtistView
     private ArrayList<Artist> mArtistArrayList;
     private Context mContext;
     private LayoutInflater mLayoutInflater;
+    private OnLongClickListenerDelegate mDelegate;
 
-    public ArtistAdapter(Context context, ArrayList<Artist> artistArrayList) {
+    public ArtistAdapter(Context context
+            , ArrayList<Artist> artistArrayList
+            , OnLongClickListenerDelegate delegate) {
         mArtistArrayList = artistArrayList;
         mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
+        mDelegate = delegate;
     }
 
     @NonNull
@@ -38,7 +43,7 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ArtistView
     @Override
     public int getItemCount() { return mArtistArrayList.size(); }
 
-    class ArtistViewHolder extends RecyclerView.ViewHolder {
+    class ArtistViewHolder extends RecyclerView.ViewHolder implements View.OnLongClickListener {
         private TextView mArtistTextView;
         private TextView mGenreTextView;
         private TextView mRateTextView;
@@ -52,6 +57,7 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ArtistView
             mGenreTextView = itemView.findViewById(R.id.genreTextView);
             mRateTextView = itemView.findViewById(R.id.rateTextView);
             mAddedDateTextView = itemView.findViewById(R.id.addedDateTextView);
+            itemView.setOnLongClickListener(this);
         }
 
         public void bind(Artist artist) {
@@ -59,8 +65,22 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ArtistView
             mGenreTextView.setText(artist.getGenre());
             mRateTextView.setText(artist.getRate());
             mAddedDateTextView.setText(artist.getAddedDate().toDate().toString());
+        }
 
+        @Override
+        public boolean onLongClick(View v) {
+            int position = getAdapterPosition();
+            Toast.makeText(mContext
+                    , "" + mArtistArrayList.get(position).getName()
+                    , Toast.LENGTH_LONG).show();
 
+            mDelegate.onLongClickViewHolder(v, position);
+
+            return false;
         }
     }
+}
+
+interface OnLongClickListenerDelegate {
+    void onLongClickViewHolder(View view, int position);
 }
