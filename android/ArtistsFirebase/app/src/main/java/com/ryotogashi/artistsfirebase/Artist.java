@@ -39,9 +39,7 @@ public class Artist {
         return genre;
     }
 
-    public int getRate() {
-        return rate;
-    }
+    public int getRate() { return rate; }
 
     public Timestamp getAddedDate() {
         return addedDate;

@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
 
             return;
         }
-        
+
         Artist artist = new Artist(name, genre, rate);
         mArtistArrayList.add(artist);
         // 1. get the database instance
