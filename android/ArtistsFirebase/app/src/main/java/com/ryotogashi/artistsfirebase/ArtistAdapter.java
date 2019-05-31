@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -17,14 +18,17 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ArtistView
     private Context mContext;
     private LayoutInflater mLayoutInflater;
     private OnLongClickListenerDelegate mDelegate;
+    private OnClickListenerDelegate mClickDelegate;
 
     public ArtistAdapter(Context context
             , ArrayList<Artist> artistArrayList
+            , OnClickListenerDelegate clickDelegate
             , OnLongClickListenerDelegate delegate) {
         mArtistArrayList = artistArrayList;
         mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
         mDelegate = delegate;
+        mClickDelegate = clickDelegate;
     }
 
     @NonNull
@@ -43,7 +47,7 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ArtistView
     @Override
     public int getItemCount() { return mArtistArrayList.size(); }
 
-    class ArtistViewHolder extends RecyclerView.ViewHolder implements View.OnLongClickListener {
+    class ArtistViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
         private TextView mArtistTextView;
         private TextView mGenreTextView;
         private TextView mRateTextView;
@@ -58,6 +62,7 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ArtistView
             mRateTextView = itemView.findViewById(R.id.rateTextView);
             mAddedDateTextView = itemView.findViewById(R.id.addedDateTextView);
             itemView.setOnLongClickListener(this);
+            itemView.setOnClickListener(this);
         }
 
         public void bind(Artist artist) {
@@ -65,6 +70,14 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ArtistView
             mGenreTextView.setText(artist.getGenre());
             mRateTextView.setText(String.valueOf(artist.getRate()));
             mAddedDateTextView.setText(artist.getAddedDate().toDate().toString());
+        }
+
+        @Override
+        public void onClick(View v) {
+            int position = getAdapterPosition();
+
+            mClickDelegate.onClickViewHolder(v, position);
+
         }
 
         @Override
@@ -76,11 +89,15 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ArtistView
 
             mDelegate.onLongClickViewHolder(v, position);
 
-            return false;
+            return true;
         }
     }
 }
 
 interface OnLongClickListenerDelegate {
     void onLongClickViewHolder(View view, int position);
+}
+
+interface OnClickListenerDelegate {
+    void onClickViewHolder(View view, int position);
 }

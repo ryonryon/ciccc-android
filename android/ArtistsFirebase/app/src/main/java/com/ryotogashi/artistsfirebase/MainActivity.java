@@ -1,5 +1,6 @@
 package com.ryotogashi.artistsfirebase;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -14,6 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -30,7 +32,7 @@ import java.util.ArrayList;
 
 import javax.annotation.Nullable;
 
-public class MainActivity extends AppCompatActivity implements OnLongClickListenerDelegate {
+public class MainActivity extends AppCompatActivity implements OnLongClickListenerDelegate, OnClickListenerDelegate {
 
     private RecyclerView mArtistRecyclerView;
     private ArtistAdapter mArtistAdapter;
@@ -69,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
                             artist.setId(documentSnapshot.getId());
                             mArtistArrayList.add(artist);
                         }
-                        mArtistAdapter = new ArtistAdapter(getApplicationContext(), mArtistArrayList, MainActivity.this);
+                        mArtistAdapter = new ArtistAdapter(getApplicationContext(), mArtistArrayList, MainActivity.this, MainActivity.this);
                         mArtistRecyclerView.setAdapter(mArtistAdapter);
                     }
                 });
@@ -156,6 +158,12 @@ public class MainActivity extends AppCompatActivity implements OnLongClickListen
     @Override
     public void onLongClickViewHolder(View view, int position) {
         showAlertDialog(position);
+    }
+
+    @Override
+    public void onClickViewHolder(View view, int position) {
+        Intent intent = new Intent(getApplicationContext(), TrackActivity.class);
+        startActivity(intent);
     }
 
     private void showAlertDialog(int position){
